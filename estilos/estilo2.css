@@ -1,0 +1,96 @@
+        /* Estilos generales del cuerpo de la página */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* Fuente más moderna */
+            background-color: #f4f7f6;/* Fondo suave */
+            color: #333 /* Color de texto principal */
+            margin: 0;
+            display: flex; /* Para centrar el contenido */
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+            min-height: 100vh;
+            /* Altura mínima para ocupar toda la vista */
+            box-sizing: border-box;
+            /* Incluir padding y border en el tamaño total */
+        }
+
+        /* Estilos para el encabezado */
+        h1 {
+            color: #2c3e50;
+            /* Un azul oscuro para el título */
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Estilos para el párrafo de descripción */
+        p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            text-align: center;
+            max-width: 600px;
+            /* Limitar ancho para mejor legibilidad */
+        }
+
+        /* Estilos para el contenedor principal (podrías envolver los inputs en un div si lo prefieres) */
+        /* Si no quieres un contenedor, estos estilos se aplicarían directamente a los elementos */
+        .form-group {
+            background-color: #ffffff;
+            /* Fondo blanco para el formulario */
+            padding: 30px;
+            border-radius: 8px;
+            /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Sombra suave */
+            width: 100%;
+            max-width: 400px;
+            /* Ancho máximo del formulario */
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para las etiquetas y los inputs */
+        label {
+            display: block;
+            /* Cada label en su propia línea */
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+            padding-top: 10px;
+            /* Espacio superior para separar */
+        }
+
+        input[type="number"] {
+            width: 30%;
+            /* Ancho completo menos padding */
+            padding: 10px;
+            margin-bottom: 15px;
+            /* Espacio entre inputs */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            /* Para que el padding no aumente el ancho total */
+            font-size: 1em;
+        }
+
+        /* Estilos para el botón */
+        input[type="submit"] {
+            background-color: #28a745;
+            /* Color verde amigable */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            width: 30%;
+            /* Ancho completo del botón */
+            transition: background-color 0.3s ease;
+            /* Transición suave al pasar el mouse */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+            /* Verde un poco más oscuro al pasar el mouse */
+        }
+
+        /* Estilos para el div de resultados */

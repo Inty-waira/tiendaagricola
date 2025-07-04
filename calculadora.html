@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/form.css">
+    <title>Calculadora de dosificacion</title>
+</head>
+
+<body>
+    <h1>Calcula que cantidad de producto que necesitas segun el area</h1>
+    <form id="formulario">
+        <label for="producto">Productos</label>
+        <select name="producto" id="producto">
+            <option value="" disabled selected>Selecciona el producto</option>
+            <option value="touchdown">Touchdown</option>
+            <option value="troton">Troton</option>
+            <option value="select">Select</option>
+            <option value="basagran">Basagran</option>
+            <option value="polythion">Polythion</option>
+            <option value="oxicloruro">Oxicloruro de cobre</option>
+            <option value="authority">authority</option>
+        </select>
+        <label for="area">Area en que aplicaras el producto</label>
+        <input type="text" name="area" id="area" required>
+
+        <label for="tipoArea">Unidad de medida</label>
+        <select name="tipoArea" id="tipoArea">
+            <option value="" disabled selected>Selecciona la unidad de medida</option>
+            <option value="hectarea">Hectarea</option>
+            <option value="metros">Metros cuadrados</option>
+        </select>
+        <button type="submit">Calcular</button>
+    </form>
+    <a href="index.html">Volver a Pagina Principal</a>
+    <div id="contenedor"></div>
+    
+    <script src="./javascript/calculdora.js"></script>
+</body>
+
+</html>
